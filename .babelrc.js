@@ -64,7 +64,7 @@ const runtimeOptions = {
 const config = {
   plugins: [
     'preserve-comment-header',
-    ['@babel/transform-runtime', runtimeOptions],
+    // ['@babel/transform-runtime', runtimeOptions],
     ...(CJS ? [['@babel/transform-modules-commonjs', cjsOptions]]: []),
     ...(DEV || TEST ? [['module-resolver', resolverOptions]]: []),
     ...(TEST ? ['istanbul'] : []),

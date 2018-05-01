@@ -15,7 +15,7 @@
 
 /* global Range */
 
-import normalizeRange from 'range-normalize';
+import * as normalizeRange from 'range-normalize';
 import { createTextQuoteSelector } from '@annotator/text';
 
 export async function describeTextQuoteByRange({ range, context }) {
